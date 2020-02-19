@@ -71,8 +71,10 @@ print(message)
 
 
 #O apóstrofo está entre aspas simples, ocorre erro de sintaxe.
-message = 'One of Python's strengths is its diverse community.'
-print(message)
+#Entre aspas para ignorar os erros do VSCode
+'''message = 'One of Python's strengths is its diverse community.'
+print(message)'''
+
 
 
 
