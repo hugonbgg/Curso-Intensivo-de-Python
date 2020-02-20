@@ -102,6 +102,46 @@ print(motorcycles)
 print("\n A " + too_expensive.title() + " is a too expensive for me.")
 
 
+###################
+#Exercícios
+
+convidados =['João','Maria','José']
+print('Sejam muito bem-vindos ' + convidados[0] +', ' + convidados[1] + ' e ' + convidados[2] + '!')
+
+print(convidados[0] + ' não poderá comparecer!')
+#Substituindo João por Mariana
+
+convidados[0] = 'Mariana'
+print('Sejam muito bem-vindos ' + convidados[0] +', ' + convidados[1] + ' e ' + convidados[2] + '!')
+
+#Adicionando três pessoas a lista
+convidados.insert(0,'Ana Paula')
+convidados.insert(2, 'Pedro Paulo')
+convidados.append('Clara')
+
+#Exibindo um bem vindo para cada um dos convidados
+#Esse for é ensinado mais pra frente no livro, estou treinando com coisas que já sei
+for convidado in convidados:
+    print('Seja bem-vindo '+ convidado + '!')
+
+
+#Removendo uma das pessoas da lista, vai ficar apenas dois:
+##Esse for é ensinado mais pra frente no livro, estou treinando com coisas que já sei
+ 
+len(convidados)
+
+while len(convidados) > 2:
+    convidados.pop()
+    print(convidados)
+
+
+
+
+
+
+
+
+
 
 
 
