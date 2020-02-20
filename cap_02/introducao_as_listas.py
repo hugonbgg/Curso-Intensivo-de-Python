@@ -126,13 +126,94 @@ for convidado in convidados:
 
 
 #Removendo uma das pessoas da lista, vai ficar apenas dois:
-##Esse for é ensinado mais pra frente no livro, estou treinando com coisas que já sei
+##Esse while / else é ensinado mais pra frente no livro, estou treinando com coisas que já sei
  
 len(convidados)
 
 while len(convidados) > 2:
-    convidados.pop()
-    print(convidados)
+    removido = convidados.pop()
+    print('Sinto muito por cancelar o convite ' + removido + '!')
+
+else:
+    print('Te espero no jantar '+ convidados[0] + '!')
+    print('Te espero no jantar '+ convidados[1] + '!')
+
+
+#limpando a lista:
+del(convidados[0])
+print(convidados)
+
+print()
+
+
+#######################################
+#Organizando uma lista usando método sort()
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars)
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort(reverse = True)
+print(cars)
+
+#Ordenando temporariamente com a função sorted()
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+
+print("Here is the original list:")
+print(cars)
+
+print("\nHere is the sorted list:")
+print(sorted(cars))
+
+print("\nHere is the original list again:")
+print(cars)
+
+
+#Exibindo a lista em ordem inversa usando o método reverse(). É permanente.
+#não organiza em ordem alfabética, apenas inverte a lista.
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(cars)
+
+cars.reverse()
+print(cars)
+
+#Descobrindo o tamanho de uma lista
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+len(cars)
+
+###########################
+#Exercícios
+
+locais = ['Antártida', 'Chicago', 'Moscou', 'Londres', 'Nova Iorque']
+print(locais)
+
+print(sorted(locais))
+print(sorted(locais, reverse=True))
+
+locais = ['Antártida', 'Chicago', 'Moscou', 'Londres', 'Nova Iorque']
+locais.reverse()
+print(locais)
+locais.reverse()
+print(locais)
+
+locais.sort()
+print(locais)
+
+locais.sort(reverse = True)
+print(locais)
+
+print(len(locais))
+
+############################################
+
+
+
+
+
 
 
 
